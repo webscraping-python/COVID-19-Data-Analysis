@@ -2,6 +2,12 @@
 
 
 1. [Importamos librerías ](#schema1)
+2. [Web Scraping](#schema2)
+3. [EDA: Exploratory data analysis](#schema3)
+4. [Continent](#schema4)
+5. [Countries](#schema5)
+
+
 
 <hr>
 
@@ -25,6 +31,9 @@ import gc
 import warnings
 warnings.filterwarnings("ignore")
 ~~~
+<hr>
+
+<a name="schema2"></a>
 
 # 2. Web Scraping
 ~~~python
@@ -108,6 +117,11 @@ df['%Inc Cases'] = df["New Cases"]/df["Total Cases"]*100
 df['%Inc Death'] = df["New Deaths"]/df["Total Deaths"]*100
 df['%Inc Recovered'] = df["New Recovered"]/df["Total Recovered"]*100
 ~~~
+
+<hr>
+
+<a name="schema3"></a>
+
 # 3. EDA: Exploratory data analysis
 Probamos solo con el primer país.
 
@@ -122,7 +136,9 @@ fig.show()
 ~~~
 ![img](./images/001.png)
 
+<hr>
 
+<a name="schema4"></a>
 
 # 4. Continent
 ~~~python
@@ -149,6 +165,9 @@ continent_vis(case_list)
 ![img](./images/006.png)
 ![img](./images/007.png)
 
+<hr>
+
+<a name="schema5"></a>
 
 # 5. Countries
 ~~~python
@@ -169,21 +188,11 @@ fig.show()
 ~~~
 ![img](./images/008.png)
 
+<hr>
 
+<a name="schema6"></a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Recursos
+# 6. Recursos
 https://stackoverflow.com/questions/52771328/plotly-chart-not-showing-in-jupyter-notebook
 
 https://www.youtube.com/watch?v=3ZacJ9zRVOU
